@@ -40,7 +40,7 @@
     "basic info  server template"
   ],
   "git repository": "https://github.com/open-template-hub/open-template-hub-server-generator",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/@fatihturker" },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/@open-template-hub" },
   "author": "Fatih Turker",
   "license": "MIT",
   "devDependencies": {
