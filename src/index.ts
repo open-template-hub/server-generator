@@ -127,6 +127,12 @@ inquirer.prompt(QUESTIONS)
                  if (err) return console.log(err);
               });
             });
+            const gitFolderPath = path.join(targetPath, ".git");
+            rmdir(gitFolderPath, (err: any) => {
+              if (err) {
+                return console.log(err);
+              }
+            });
           }
       });
       }
