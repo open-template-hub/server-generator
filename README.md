@@ -25,13 +25,8 @@ and run the generator command:
 $ open-template-hub-server-generator
 ```
 
-# `Authors`
- * **Fatih Türker**
 # `Sponsors`
 No sponsors yet! **Will you be the first?**
-
-# `Contributors`
-No contributers yet! **Will you be the first?**
 
 ## Contributors
 
