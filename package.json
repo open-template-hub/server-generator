@@ -1,12 +1,12 @@
 {
   "name": "open-template-hub-server-generator",
   "description": "Express Generator CLI for Server Templates on Open Template Hub",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "preferGlobal": true,
   "scripts": {
     "start": "ts-node src/index.ts",
-    "build": "tsc && shx rm -rf dist/template && shx cp -r template dist"
+    "build": "tsc"
   },
   "bin": {
     "open-template-hub-server-generator": "./dist/index.js"
