@@ -9,7 +9,7 @@
     "build": "tsc && shx rm -rf dist/template && shx cp -r template dist"
   },
   "bin": {
-    "express-generator-ntagm": "./dist/index.js"
+    "open-template-hub-server-generator": "./dist/index.js"
   },
   "keywords": [
     "Express generator",
@@ -40,7 +40,6 @@
     "basic info  server template"
   ],
   "git repository": "https://github.com/open-template-hub/open-template-hub-server-generator",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/@open-template-hub" },
   "author": "Fatih Turker",
   "license": "MIT",
   "devDependencies": {
