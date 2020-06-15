@@ -20,8 +20,8 @@ const QUESTIONS = [
     name: 'template',
     type: 'input',
     message: '1) Payment Server \n'
-           + '  2) Basic Info Server \n'
-           + '  3) Auth Server \n'
+           + '  2) Auth Server \n'
+           + '  3) Basic Info Server \n'
            +'  Please enter a server type you want to generate: ',
     when: () => !yargs.argv['template'],
     validate: (input: string) => {
@@ -84,23 +84,14 @@ inquirer.prompt(QUESTIONS)
     switch(templateType) {
       case TemplateType.AuthServer:
         existingProjectName = ProjectName.AuthServer;
-        break;
-      case TemplateType.PaymentServer:
-        existingProjectName = ProjectName.PaymentServer;
-        break;
-      case TemplateType.BasicInfoServer:
-        existingProjectName = ProjectName.BasicInfoServer;
-        break;
-    }
-
-    switch(templateType) {
-      case TemplateType.AuthServer:
         existingPackageName = PackageName.AuthServer;
         break;
       case TemplateType.PaymentServer:
+        existingProjectName = ProjectName.PaymentServer;
         existingPackageName = PackageName.PaymentServer;
         break;
       case TemplateType.BasicInfoServer:
+        existingProjectName = ProjectName.BasicInfoServer;
         existingPackageName = PackageName.BasicInfoServer;
         break;
     }
