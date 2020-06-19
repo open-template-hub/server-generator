@@ -1,5 +1,5 @@
 {
-  "name": "@open-template-hub/open-template-hub-server-generator",
+  "name": "open-template-hub-server-generator",
   "description": "Express Generator CLI for Server Templates on Open Template Hub",
   "version": "1.0.9",
   "main": "dist/index.js",
@@ -40,9 +40,6 @@
     "basic info  server template"
   ],
   "git repository": "https://github.com/open-template-hub/open-template-hub-server-generator",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@open-template-hub"
-  },
   "author": "Fatih Turker",
   "license": "MIT",
   "devDependencies": {
