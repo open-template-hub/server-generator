@@ -1,5 +1,5 @@
 {
-  "name": "open-template-hub-server-generator",
+  "name": "@open-template-hub/open-template-hub-server-generator",
   "description": "Express Generator CLI for Server Templates on Open Template Hub",
   "version": "1.0.8",
   "main": "dist/index.js",
