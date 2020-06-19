@@ -16,7 +16,6 @@ jobs:
         with:
           node-version: 12
       - run: npm ci
-      - run: npm run-script build
       - run: npm test
 
   publish-npm:
@@ -29,6 +28,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm ci
+      - run: npm run-script build
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
