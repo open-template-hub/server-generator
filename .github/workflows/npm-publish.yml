@@ -17,7 +17,6 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: git pull
       - run: npm install
       - run: npm ci
       - run: npm run-script build
@@ -35,7 +34,6 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com
           scope: '@open-template-hub'
-      - run: git pull
       - run: npm install
       - run: npm ci
       - run: npm run-script build
