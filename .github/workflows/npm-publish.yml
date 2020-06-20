@@ -27,6 +27,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          token : ${{ secrets.MASTER_BRANCH_ACCESS_TOKEN }}
       - run: cat ./package.json
       - uses: actions/setup-node@v1
         with:
@@ -34,6 +36,7 @@ jobs:
       - uses: phips28/gh-action-bump-version@master
         with:
           tag-prefix: ''
+          token : ${{ secrets.MASTER_BRANCH_ACCESS_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: cat ./package.json
