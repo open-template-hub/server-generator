@@ -15,7 +15,7 @@ Available server types are:
 ## `About the NPM Package`
 ### Package Installation
 ```sh
-npm install -g open-template-hub-server-generator
+npm install -g @open-template-hub/server-generator
 ```
 
 ### Package Usage
