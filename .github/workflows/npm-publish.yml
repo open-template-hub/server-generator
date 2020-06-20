@@ -1,0 +1,46 @@
+# Publish new version to NPM and GitHub
+
+name: Node.js Package
+
+on:
+  push:
+    tags:
+    - *
+
+jobs:
+  publish-npm:
+    needs: [build, bump-version]
+    name: "Publish to NPM"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - run: git pull
+      - run: npm install
+      - run: npm ci
+      - run: npm run-script build
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
+  publish-gpr:
+    needs: [build, bump-version]
+    name: "Publish to GitHub"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://npm.pkg.github.com
+          scope: '@open-template-hub'
+      - run: git pull
+      - run: npm install
+      - run: npm ci
+      - run: npm run-script build
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
