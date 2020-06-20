@@ -4,8 +4,9 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - "master"
 
 jobs:
   build:
@@ -19,8 +20,26 @@ jobs:
       - run: npm ci
       - run: npm test
 
-  publish-npm:
+  bump-version:
     needs: build
+    name: "Bump Version on master"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: cat ./package.json
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - uses: phips28/gh-action-bump-version@master
+        with:
+          tag-prefix: ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: cat ./package.json
+        
+  publish-npm:
+    needs: [build, bump-version]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -36,14 +55,14 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
   publish-gpr:
-    needs: build
+    needs: [build, bump-version]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: https://npm.pkg.github.com
           scope: '@open-template-hub'
       - run: npm install
       - run: npm ci
