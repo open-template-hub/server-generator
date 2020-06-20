@@ -28,6 +28,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
+      - run: npm install
       - run: npm ci
       - run: npm run-script build
       - run: npm publish --access public
@@ -44,6 +45,7 @@ jobs:
           node-version: 12
           registry-url: 'https://npm.pkg.github.com'
           scope: '@open-template-hub'
+      - run: npm install
       - run: npm ci
       - run: npm run-script build
       - run: npm publish
