@@ -9,6 +9,7 @@ on:
 
 jobs:
   build:
+    name: "CI"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -39,6 +40,7 @@ jobs:
         
   publish-npm:
     needs: [build, bump-version]
+    name: "Publish to NPM"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -46,6 +48,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
+      - run: git pull
       - run: npm install
       - run: npm ci
       - run: npm run-script build
@@ -55,6 +58,7 @@ jobs:
 
   publish-gpr:
     needs: [build, bump-version]
+    name: "Publish to GitHub"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
