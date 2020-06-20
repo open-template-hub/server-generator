@@ -1,4 +1,4 @@
-# Bump package.json version and publish new version to NPM and GitHub
+# CI, bump package.json version and publish new version to NPM and GitHub
 
 name: Node.js Package
 
