@@ -1,5 +1,4 @@
-# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
-# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
+# Bump package.json version and publish new version to NPM and GitHub
 
 name: Node.js Package
 
@@ -64,6 +63,7 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com
           scope: '@open-template-hub'
+      - run: git pull
       - run: npm install
       - run: npm ci
       - run: npm run-script build
