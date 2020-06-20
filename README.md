@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">
-Express Generator CLI for Server Templates on Open Template Hub
+Open Template Hub - Server Generator
 </h1>
 
 [![NPM](https://img.shields.io/badge/NPM-Package-cb3837.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@open-template-hub/server-generator)
@@ -15,9 +15,9 @@ Express Generator CLI for Server Templates on Open Template Hub
 This CLI helps you to create a server via Open Template Hub.
 
 Available server types are:
-* Payment Server 
-* Basic Info Server 
-* Auth Server
+* [Payment Server](https://github.com/open-template-hub/payment-server-template)
+* [Basic Info Server](https://github.com/open-template-hub/basic-info-server-template) 
+* [Auth Server](https://github.com/open-template-hub/auth-server-nodejs-template)
 
 ## About the NPM Package
 ### Package Installation
