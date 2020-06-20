@@ -3,7 +3,7 @@
 [![SonarCloud](https://img.shields.io/sonar/quality_gate/open-template-hub_open-template-hub-server-generator?server=https%3A%2F%2Fsonarcloud.io&label=Sonar%20Cloud&style=for-the-badge)](https://sonarcloud.io/dashboard?id=open-template-hub_open-template-hub-server-generator)
 [![BTC](https://img.shields.io/badge/Donate-BTC-ORANGE?color=F5922F&style=for-the-badge&logo=bitcoin)](https://commerce.coinbase.com/checkout/8313af5f-de48-498d-b2cb-d98819ca7d5e)
 
-# `Express Generator CLI for Server Templates on Open Template Hub`
+# Express Generator CLI for Server Templates on Open Template Hub
 
 This CLI helps you to create a server via Open Template Hub.
 
@@ -12,7 +12,7 @@ Available server types are:
 * Basic Info Server 
 * Auth Server
 
-## `About the NPM Package`
+## About the NPM Package
 ### Package Installation
 ```sh
 npm install -g @open-template-hub/server-generator
@@ -28,7 +28,7 @@ and run the generator command:
 $ open-template-hub-server-generator
 ```
 
-# `Sponsors`
+# Sponsors
 No sponsors yet! **Will you be the first?**
 
 ## Contributors
