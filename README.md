@@ -47,6 +47,14 @@ No sponsors yet! **Will you be the first?**
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+## Contributing
+
+* Fork it
+* Create your update branch (git checkout -b my-feature-branch)
+* Commit your changes (git commit -am 'Add some features')
+* Push to the branch (git push origin my-feature-branch)
+* Create new Pull Request
+
 ## LICENSE
 
 [MIT](LICENSE)
