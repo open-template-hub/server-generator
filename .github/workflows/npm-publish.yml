@@ -5,11 +5,10 @@ name: Node.js Package
 on:
   push:
     tags:
-    - *
+      - '*'
 
 jobs:
   publish-npm:
-    needs: [build, bump-version]
     name: "Publish to NPM"
     runs-on: ubuntu-latest
     steps:
@@ -27,7 +26,6 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
   publish-gpr:
-    needs: [build, bump-version]
     name: "Publish to GitHub"
     runs-on: ubuntu-latest
     steps:
