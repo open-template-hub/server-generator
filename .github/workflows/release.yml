@@ -30,7 +30,7 @@ jobs:
       - run: npm install
       - run: npm ci
       - run: npm run-script build
-      - run: mv npm-README.md README.md
+      - run: mv NPM-README.md README.md
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
