@@ -40,6 +40,10 @@
     "basic info  server template"
   ],
   "git repository": "https://github.com/open-template-hub/open-template-hub-server-generator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/open-template-hub/server-generator.git"
+  },
   "author": "Fatih Turker",
   "license": "MIT",
   "devDependencies": {
