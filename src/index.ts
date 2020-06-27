@@ -102,26 +102,26 @@ inquirer.prompt(QUESTIONS)
       if (err) {
         return console.log(err);
       } else {
-        rmdir(oldPath, (err: any) => {
-          if (err) {
-            return console.log(err);
+        rmdir(oldPath, (errRmDir: any) => {
+          if (errRmDir) {
+            return console.log(errRmDir);
           } else {
             let packageFile = path.join(targetPath, 'package.json');
 
-            fs.readFile(packageFile, 'utf8', function (err,data) {
-              if (err) {
-                return console.log(err);
+            fs.readFile(packageFile, 'utf8', function (errReadFile,data) {
+              if (errReadFile) {
+                return console.log(errReadFile);
               }
               var result = data.replace(existingPackageName, projectName);
-            
-              fs.writeFile(packageFile, result, 'utf8', function (err) {
-                 if (err) return console.log(err);
+
+              fs.writeFile(packageFile, result, 'utf8', function (errWriteFile) {
+                 if (errWriteFile) return console.log(errWriteFile);
               });
             });
             const gitFolderPath = path.join(targetPath, ".git");
-            rmdir(gitFolderPath, (err: any) => {
-              if (err) {
-                return console.log(err);
+            rmdir(gitFolderPath, (errRmDirInner: any) => {
+              if (errRmDirInner) {
+                return console.log(errRmDirInner);
               }
             });
           }
@@ -155,14 +155,14 @@ inquirer.prompt(QUESTIONS)
     if (result.code !== 0) {
       return false;
     }
-  
+
     return true;
   }
 
 /**
  * shows message to user
  * @param projectName project name
- */  
+ */
 const showMessage = (projectName: string) => {
   console.log('');
   console.log(chalk.green('Done.'));
