@@ -64,5 +64,4 @@ No sponsors yet! **Will you be the first?**
 
 ## LICENSE
 
-[MIT](LICENSE)
-
+The source code for this project is released under the [MIT License](https://github.com/open-template-hub/server-generator/blob/develop/LICENSE).
