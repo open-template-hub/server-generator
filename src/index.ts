@@ -22,11 +22,12 @@ const QUESTIONS = [
     message: '1) Payment Server \n'
            + '  2) Auth Server \n'
            + '  3) Basic Info Server \n'
+           + '  4) File Storage Server \n'
            +'  Please enter a server type you want to generate: ',
     when: () => !yargs.argv['template'],
     validate: (input: string) => {
-      if (/^[1 | 2 | 3]$/.test(input)) return true;
-      else return 'Please enter correct server type. Server type can be 1, 2 and 3.';
+      if (/^[1 | 2 | 3 | 4]$/.test(input)) return true;
+      else return 'Please enter correct server type. Server type can be 1, 2, 3 and 4.';
     }
   },
   {
@@ -94,6 +95,10 @@ inquirer.prompt(QUESTIONS)
         existingProjectName = ProjectName.BasicInfoServer;
         existingPackageName = PackageName.BasicInfoServer;
         break;
+      case TemplateType.FileStorageServer:
+        existingProjectName = ProjectName.FileStorageServer;
+        existingPackageName = PackageName.FileStorageServer;
+        break;
     }
 
     let oldPath = path.join(targetPath, existingProjectName);
@@ -147,6 +152,9 @@ inquirer.prompt(QUESTIONS)
         break;
       case TemplateType.BasicInfoServer:
         cmd = clone + BRANCH_NAME + " " + TEMPLATE_HUB_URL + "/" + ProjectName.BasicInfoServer;
+        break;
+      case TemplateType.FileStorageServer:
+        cmd = clone + BRANCH_NAME + " " + TEMPLATE_HUB_URL + "/" + ProjectName.FileStorageServer;
         break;
     }
     console.log("command: ", cmd);
