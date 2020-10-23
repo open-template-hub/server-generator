@@ -7,7 +7,7 @@ export const TemplateType = {
 
 export const TEMPLATE_HUB_URL = "https://github.com/open-template-hub";
 
-export const BRANCH_NAME = "develop";
+export const BRANCH_NAME = "master";
 
 export const ProjectName = {
   PaymentServer: "payment-server-template",
