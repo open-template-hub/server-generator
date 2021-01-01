@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "preferGlobal": true,
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "build": "tsc"
   },
   "bin": {
     "open-template-hub-server-generator": "./node_modules/ts-node/dist/bin.js index.ts"
