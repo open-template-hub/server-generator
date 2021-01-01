@@ -9,7 +9,7 @@
     "build": "tsc"
   },
   "bin": {
-    "open-template-hub-server-generator": "./node_modules/ts-node/dist/bin.js index.ts"
+    "open-template-hub-server-generator": "./dist/index.js"
   },
   "keywords": [
     "Express generator",
