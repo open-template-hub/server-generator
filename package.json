@@ -2,14 +2,14 @@
   "name": "@open-template-hub/server-generator",
   "description": "Express Generator CLI for Server Templates on Open Template Hub",
   "version": "2.0.2",
-  "main": "dist/index.js",
+  "main": "src/index.ts",
   "preferGlobal": true,
   "scripts": {
     "start": "ts-node src/index.ts",
     "build": "tsc"
   },
   "bin": {
-    "open-template-hub-server-generator": "./dist/index.js"
+    "open-template-hub-server-generator": "./src/index.ts"
   },
   "keywords": [
     "Express generator",
@@ -47,19 +47,17 @@
   "author": "Fatih Turker",
   "license": "MIT",
   "devDependencies": {
-    "@types/ejs": "^2.6.0",
     "@types/inquirer": "^0.0.43",
     "@types/node": "^10.9.4",
     "@types/shelljs": "^0.8.0",
     "@types/yargs": "^11.1.1",
-    "shx": "^0.3.2",
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"
   },
   "dependencies": {
     "@types/ncp": "^2.0.4",
     "@types/rimraf": "^3.0.0",
-    "ejs": "^2.6.1",
+    "chalk": "^4.1.0",
     "inquirer": "^6.2.0",
     "ncp": "^2.0.0",
     "rimraf": "^3.0.2",
