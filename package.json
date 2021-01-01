@@ -5,11 +5,10 @@
   "main": "src/index.ts",
   "preferGlobal": true,
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "build": "tsc"
+    "start": "ts-node src/index.ts"
   },
   "bin": {
-    "open-template-hub-server-generator": "./src/index.ts"
+    "open-template-hub-server-generator": "./node_modules/ts-node/dist/bin.js index.ts"
   },
   "keywords": [
     "Express generator",
@@ -48,11 +47,11 @@
   "license": "MIT",
   "devDependencies": {
     "@types/inquirer": "^0.0.43",
-    "@types/node": "^10.9.4",
+    "@types/node": "^10.17.50",
     "@types/shelljs": "^0.8.0",
     "@types/yargs": "^11.1.1",
     "ts-node": "^7.0.1",
-    "typescript": "^3.0.3"
+    "typescript": "^3.9.7"
   },
   "dependencies": {
     "@types/ncp": "^2.0.4",
