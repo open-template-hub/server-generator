@@ -1,4 +1,6 @@
-#!/usr/bin/env node
+/**
+ * @description holds the project generator
+ */
 
 import * as inquirer from 'inquirer';
 import * as fs from 'fs';
@@ -15,10 +17,6 @@ import {
   TEMPLATE_HUB_URL,
   PackageName,
 } from './constant';
-
-/**
- * @description holds the project generator
- */
 
 // Questions
 const QUESTIONS = [
