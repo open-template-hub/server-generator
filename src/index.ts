@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 /**
  * @description holds the project generator
  */
