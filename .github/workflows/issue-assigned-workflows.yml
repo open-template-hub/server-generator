@@ -1,4 +1,4 @@
-name: Issue Open Workflows
+name: Issue Assigned Workflows
 on:
   issues:
     types: [assigned]
@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: alex-page/github-project-automation-plus@v0.3.0
         with:
-          project: Open Template Hub Servers
+          project: WeContribute
           column: In progress
           repo-token: ${{ secrets.MASTER_BRANCH_ACCESS_TOKEN }}
