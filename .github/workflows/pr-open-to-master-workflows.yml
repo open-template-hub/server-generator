@@ -1,10 +1,11 @@
-name: On Push to Master Workflows
-on:
-   push:
+ name: PR Open to Master Workflows
+ on:
+   pull_request:
+     types: [opened]
      branches:
-       - "master"
-
-jobs:
+        - master
+ 
+ jobs:
   bump-version:
      name: "Update Version"
      runs-on: ubuntu-latest
