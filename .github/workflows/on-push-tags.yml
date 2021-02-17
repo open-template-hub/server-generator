@@ -1,4 +1,5 @@
 name: On Push Tags Workflows
+
 on:
   push:
     tags:
@@ -6,45 +7,67 @@ on:
 
 jobs:
   tagged-release:
-    name: "Release"
+    name: "Tagged Release"
     runs-on: "ubuntu-latest"
 
     steps:
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - name: Generate Release From Tag
+        uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: false 
-  
+          prerelease: false
+
   publish-npm:
     name: "Publish to NPM"
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Install Node
+        uses: actions/setup-node@v1
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm install
-      - run: npm ci
-      - run: npm run-script build
-      - run: mv NPM-README.md README.md
-      - run: npm publish --access public
+
+      - name: NPM Install
+        run: npm install
+      - name: NPM Continous Integration
+        run: npm ci
+      - name: NPM Build
+        run: npm run-script build
+      - name: NPM Version of the Readme
+        run: mv NPM-README.md README.md
+      - name: NPM Publish
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
   publish-gpr:
     name: "Publish to GitHub"
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Install Node
+        uses: actions/setup-node@v1
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com
           scope: '@open-template-hub'
-      - run: npm install
-      - run: npm ci
-      - run: npm run-script build
-      - run: npm publish
+
+      - name: NPM Install
+        run: npm install
+      - name: NPM Continous Integration
+        run: npm ci
+      - name: NPM Build
+        run: npm run-script build
+      - name: NPM Publish
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
