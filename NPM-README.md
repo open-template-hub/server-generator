@@ -15,29 +15,37 @@ Open Template Hub - Server Generator
 This CLI helps you to create a server via Open Template Hub.
 
 Available server types are:
+
 * [Payment Server](https://github.com/open-template-hub/payment-server-template)
-* [Basic Info Server](https://github.com/open-template-hub/basic-info-server-template) 
+* [Basic Info Server](https://github.com/open-template-hub/basic-info-server-template)
 * [Auth Server](https://github.com/open-template-hub/auth-server-nodejs-template)
 * [File Storage Server](https://github.com/open-template-hub/file-storage-server-template)
 * [Analytics Server](https://github.com/open-template-hub/analytics-server-template)
 
 ## About the NPM Package
+
 ### Package Installation
+
 ```sh
 npm install -g @open-template-hub/server-generator
 ```
 
 ### Package Usage
+
 Go to the directory on terminal where you want to generate the project.
+
 ```sh
 $ cd PATH
 ```
+
 and run the generator command:
+
 ```sh
 $ open-template-hub-server-generator
 ```
 
 # Sponsors
+
 No sponsors yet! **Will you be the first?**
 
 ## Contributors
