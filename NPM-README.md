@@ -5,14 +5,14 @@
 </p>
 
 <h1 align="center">
-Open Template Hub - Server Generator
+Open Template Hub - Server Generator v2
 </h1>
 
 [![GitHubRepo](https://img.shields.io/badge/GitHub-Repository-24292e.svg?style=for-the-badge&logo=github)](https://github.com/open-template-hub/server-generator)
 [![SonarCloud](https://img.shields.io/sonar/quality_gate/open-template-hub_open-template-hub-server-generator?server=https%3A%2F%2Fsonarcloud.io&label=Sonar%20Cloud&style=for-the-badge&logo=sonarcloud)](https://sonarcloud.io/dashboard?id=open-template-hub_open-template-hub-server-generator)
 [![BTC](https://img.shields.io/badge/Donate-BTC-ORANGE?color=F5922F&style=for-the-badge&logo=bitcoin)](https://commerce.coinbase.com/checkout/8313af5f-de48-498d-b2cb-d98819ca7d5e)
 
-This CLI helps you to create a server via Open Template Hub.
+CLI server generator of Server Templates on [Open Template Hub](https://github.com/open-template-hub)
 
 Available server types are:
 

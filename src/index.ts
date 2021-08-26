@@ -79,69 +79,85 @@ inquirer.prompt( QUESTIONS ).then( ( answers ) => {
   showMessage( projectName );
 } );
 
+interface RepoConfig {
+  projectName: string,
+  packageName: string
+}
+
+function updatePackageJson( targetPath: string, repoConfig: RepoConfig, projectName: string ) {
+  let packageFile = path.join( targetPath, 'package.json' );
+
+  fs.readFile( packageFile, 'utf8', function ( errReadFile, data ) {
+    if ( errReadFile ) {
+      return console.log( errReadFile );
+    }
+    let result = data.replace( repoConfig.packageName, projectName );
+
+    fs.writeFile( packageFile, result, 'utf8', function ( errWriteFile ) {
+      if ( errWriteFile ) return console.log( errWriteFile );
+    } );
+  } );
+}
+
 const updateProjectName = (
     targetPath: string,
     templateType: string,
     projectName: string
 ) => {
-  let existingProjectName = '';
-  let existingPackageName = '';
+
+  let repoConfig: RepoConfig = {
+    packageName: '',
+    projectName: ''
+  };
+
   shell.cd( targetPath );
 
   switch ( templateType ) {
     case TemplateType.AuthServer:
-      existingProjectName = ProjectName.AuthServer;
-      existingPackageName = PackageName.AuthServer;
+      repoConfig.projectName = ProjectName.AuthServer;
+      repoConfig.packageName = PackageName.AuthServer;
       break;
     case TemplateType.PaymentServer:
-      existingProjectName = ProjectName.PaymentServer;
-      existingPackageName = PackageName.PaymentServer;
+      repoConfig.projectName = ProjectName.PaymentServer;
+      repoConfig.packageName = PackageName.PaymentServer;
       break;
     case TemplateType.BasicInfoServer:
-      existingProjectName = ProjectName.BasicInfoServer;
-      existingPackageName = PackageName.BasicInfoServer;
+      repoConfig.projectName = ProjectName.BasicInfoServer;
+      repoConfig.packageName = PackageName.BasicInfoServer;
       break;
     case TemplateType.FileStorageServer:
-      existingProjectName = ProjectName.FileStorageServer;
-      existingPackageName = PackageName.FileStorageServer;
+      repoConfig.projectName = ProjectName.FileStorageServer;
+      repoConfig.packageName = PackageName.FileStorageServer;
       break;
     case TemplateType.AnalyticsServer:
-      existingProjectName = ProjectName.AnalyticsServer;
-      existingPackageName = PackageName.AnalyticsServer;
+      repoConfig.projectName = ProjectName.AnalyticsServer;
+      repoConfig.packageName = PackageName.AnalyticsServer;
       break;
   }
 
-  let oldPath = path.join( targetPath, existingProjectName );
+  let oldPath = path.join( targetPath, repoConfig.projectName );
 
   ncp( oldPath, targetPath, function ( err ) {
+
     if ( err ) {
       return console.log( err );
-    } else {
-      rmdir( oldPath, ( errRmDir: any ) => {
-        if ( errRmDir ) {
-          return console.log( errRmDir );
-        } else {
-          let packageFile = path.join( targetPath, 'package.json' );
+    }
 
-          fs.readFile( packageFile, 'utf8', function ( errReadFile, data ) {
-            if ( errReadFile ) {
-              return console.log( errReadFile );
-            }
-            var result = data.replace( existingPackageName, projectName );
+    rmdir( oldPath, ( errRmDir: any ) => {
 
-            fs.writeFile( packageFile, result, 'utf8', function ( errWriteFile ) {
-              if ( errWriteFile ) return console.log( errWriteFile );
-            } );
-          } );
-          const gitFolderPath = path.join( targetPath, '.git' );
-          rmdir( gitFolderPath, ( errRmDirInner: any ) => {
-            if ( errRmDirInner ) {
-              return console.log( errRmDirInner );
-            }
-          } );
+      if ( errRmDir ) {
+        return console.log( errRmDir );
+      }
+      updatePackageJson( targetPath, repoConfig, projectName );
+
+      const gitFolderPath = path.join( targetPath, '.git' );
+
+      rmdir( gitFolderPath, ( errRmDirInner: any ) => {
+        if ( errRmDirInner ) {
+          return console.log( errRmDirInner );
         }
       } );
-    }
+    } );
   } );
 
   return true;

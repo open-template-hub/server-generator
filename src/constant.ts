@@ -19,9 +19,9 @@ export const ProjectName = {
 };
 
 export const PackageName = {
-  PaymentServer: 'payment-server',
+  PaymentServer: 'payment-server-template',
   AuthServer: 'auth-server-nodejs-template',
-  BasicInfoServer: 'basic-info-server',
+  BasicInfoServer: 'basic-info-server-template',
   FileStorageServer: 'file-storage-server-template',
   AnalyticsServer: 'analytics-server-template',
 };
