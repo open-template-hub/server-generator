@@ -18,7 +18,7 @@ Open Template Hub - Server Generator v2
 [![SonarCloud](https://img.shields.io/sonar/quality_gate/open-template-hub_server-generator?server=https%3A%2F%2Fsonarcloud.io&label=Sonar%20Cloud&style=for-the-badge&logo=sonarcloud)](https://sonarcloud.io/dashboard?id=open-template-hub_server-generator)
 [![BTC](https://img.shields.io/badge/Donate-BTC-ORANGE?color=F5922F&style=for-the-badge&logo=bitcoin)](https://commerce.coinbase.com/checkout/8313af5f-de48-498d-b2cb-d98819ca7d5e)
 
-CLI server generator of Server Templates on [Open Template Hub](https://github.com/open-template-hub)
+CLI server generator of the Server Templates on [Open Template Hub](https://github.com/open-template-hub)
 
 Available server types are:
 
