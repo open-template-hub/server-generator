@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://www.linkedin.com/company/open-template-hub">
-    <img src="https://github.com/open-template-hub/open-template-hub.github.io/blob/master/assets/logo/brand-logo.png?raw=true" alt="Logo" width=200>
+  <a href="https://opentemplatehub.com">
+    <img src="https://github.com/open-template-hub/open-template-hub.github.io/blob/master/assets/logo/generators/server-generator-logo.png?raw=true" alt="Logo" width=200>
   </a>
 </p>
 
@@ -12,7 +12,7 @@ Open Template Hub - Server Generator v2
 [![SonarCloud](https://img.shields.io/sonar/quality_gate/open-template-hub_server-generator?server=https%3A%2F%2Fsonarcloud.io&label=Sonar%20Cloud&style=for-the-badge&logo=sonarcloud)](https://sonarcloud.io/dashboard?id=open-template-hub_server-generator)
 [![BTC](https://img.shields.io/badge/Donate-BTC-ORANGE?color=F5922F&style=for-the-badge&logo=bitcoin)](https://commerce.coinbase.com/checkout/8313af5f-de48-498d-b2cb-d98819ca7d5e)
 
-CLI server generator of Server Templates on [Open Template Hub](https://github.com/open-template-hub)
+Command line interface generator of the servers at [Open Template Hub](https://github.com/open-template-hub)
 
 Available server types are:
 
