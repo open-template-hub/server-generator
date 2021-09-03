@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://opentemplatehub.com">
-    <img src="https://github.com/open-template-hub/open-template-hub.github.io/blob/master/assets/logo/generators/server-generator-logo.png?raw=true" alt="Logo" width=200>
+    <img src="https://raw.githubusercontent.com/open-template-hub/open-template-hub.github.io/master/assets/logo/generator/server-generator-logo.png" alt="Logo" width=200>
   </a>
 </p>
 
