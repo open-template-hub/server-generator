@@ -14,7 +14,7 @@ jobs:
       - name: Generate Release From Tag
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          repo_token: "${{ secrets.MASTER_BRANCH_ACCESS_TOKEN }}"
           prerelease: false
 
   publish-npm:
@@ -70,4 +70,4 @@ jobs:
       - name: NPM Publish
         run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.MASTER_BRANCH_ACCESS_TOKEN}}
