@@ -25,12 +25,13 @@ const QUESTIONS = [
         '  3) Basic Info Server \n' +
         '  4) File Storage Server \n' +
         '  5) Analytics Server \n' +
+        '  6) MİL Server \n' +
         '  Please enter a server type you want to generate: ',
     when: () => !yargs.argv[ 'template' ],
     validate: ( input: string ) => {
-      if ( /^[1 | 2 | 3 | 4 | 5]$/.test( input ) ) return true;
+      if ( /^[1 | 2 | 3 | 4 | 5 | 6]$/.test( input ) ) return true;
       else
-        return 'Please enter correct server type. Server type can be 1, 2, 3, 4 and 5.';
+        return 'Please enter correct server type. Server type can be 1, 2, 3, 4, 5 and 6.';
     },
   },
   {
@@ -133,6 +134,10 @@ const updateProjectName = (
       repoConfig.projectName = ProjectName.AnalyticsServer;
       repoConfig.packageName = PackageName.AnalyticsServer;
       break;
+    case TemplateType.MailServer:
+      repoConfig.projectName = ProjectName.MailServer;
+      repoConfig.packageName = PackageName.MailServer;
+      break;
   }
 
   let oldPath = path.join( targetPath, repoConfig.projectName );
@@ -214,6 +219,15 @@ const cloneTemplate = ( targetPath: string, templateType: string ) => {
           TEMPLATE_HUB_URL +
           '/' +
           ProjectName.AnalyticsServer;
+      break;
+    case TemplateType.MailServer:
+      cmd =
+          clone +
+          BRANCH_NAME +
+          ' ' +
+          TEMPLATE_HUB_URL +
+          '/' +
+          ProjectName.MailServer;
       break;
   }
   console.log( 'command: ', cmd );

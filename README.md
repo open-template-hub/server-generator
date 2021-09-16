@@ -27,6 +27,7 @@ Available server types are:
 * [Auth Server](https://github.com/open-template-hub/auth-server-nodejs-template)
 * [File Storage Server](https://github.com/open-template-hub/file-storage-server-template)
 * [Analytics Server](https://github.com/open-template-hub/analytics-server-template)
+* [Mail Server](https://github.com/open-template-hub/mail-server-template)
 
 ## About the NPM Package
 
