@@ -4,6 +4,7 @@ export const TemplateType = {
   BasicInfoServer: '3',
   FileStorageServer: '4',
   AnalyticsServer: '5',
+  MailServer: '6',
 };
 
 export const TEMPLATE_HUB_URL = 'https://github.com/open-template-hub';
@@ -16,6 +17,7 @@ export const ProjectName = {
   BasicInfoServer: 'basic-info-server-template',
   FileStorageServer: 'file-storage-server-template',
   AnalyticsServer: 'analytics-server-template',
+  MailServer: 'mail-server-template',
 };
 
 export const PackageName = {
@@ -24,4 +26,5 @@ export const PackageName = {
   BasicInfoServer: 'basic-info-server-template',
   FileStorageServer: 'file-storage-server-template',
   AnalyticsServer: 'analytics-server-template',
+  MailServer: 'mail-server-template',
 };
