@@ -13,7 +13,7 @@ export const BRANCH_NAME = 'master';
 
 export const ProjectName = {
   PaymentServer: 'payment-server-template',
-  AuthServer: 'auth-server-nodejs-template',
+  AuthServer: 'auth-server-template',
   BasicInfoServer: 'basic-info-server-template',
   FileStorageServer: 'file-storage-server-template',
   AnalyticsServer: 'analytics-server-template',
@@ -22,7 +22,7 @@ export const ProjectName = {
 
 export const PackageName = {
   PaymentServer: 'payment-server-template',
-  AuthServer: 'auth-server-nodejs-template',
+  AuthServer: 'auth-server-template',
   BasicInfoServer: 'basic-info-server-template',
   FileStorageServer: 'file-storage-server-template',
   AnalyticsServer: 'analytics-server-template',
