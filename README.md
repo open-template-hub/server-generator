@@ -24,7 +24,7 @@ Available server types are:
 
 * [Payment Server](https://github.com/open-template-hub/payment-server-template)
 * [Basic Info Server](https://github.com/open-template-hub/basic-info-server-template)
-* [Auth Server](https://github.com/open-template-hub/auth-server-nodejs-template)
+* [Auth Server](https://github.com/open-template-hub/auth-server-template)
 * [File Storage Server](https://github.com/open-template-hub/file-storage-server-template)
 * [Analytics Server](https://github.com/open-template-hub/analytics-server-template)
 * [Mail Server](https://github.com/open-template-hub/mail-server-template)
