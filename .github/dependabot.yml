@@ -15,7 +15,7 @@ updates:
     labels:
       - "workflow"
     commit-message:
-      - "Workflow/dependency update"
-    milestone:
-      - "3.0.0"
-    
+      prefix: "Workflow/dependency update "
+      include: "scope"
+    milestone: 1
+
