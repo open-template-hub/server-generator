@@ -7,9 +7,15 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "monday"
+      time: "08:00"
+      timezone: "Etc/GMT"
     # Raise all npm pull requests with custom labels
     labels:
       - "workflow"
     commit-message:
       - "Workflow/dependency update"
+    milestone:
+      - "3.0.0"
+    
