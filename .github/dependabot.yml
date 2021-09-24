@@ -11,3 +11,5 @@ updates:
     # Raise all npm pull requests with custom labels
     labels:
       - "workflow"
+    commit-message:
+      - "Workflow/dependency update"
