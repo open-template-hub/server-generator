@@ -1,0 +1,13 @@
+# dependabot.yml file with
+# customized npm configuration
+
+version: 2
+updates:
+  # Keep npm dependencies up to date
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    # Raise all npm pull requests with custom labels
+    labels:
+      - "workflow"
