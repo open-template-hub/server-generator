@@ -1,10 +1,11 @@
-name: PR Open To Demos Workflows
+name: PR Open To Demos and Dependency Update Workflows
 
 on:
   pull_request:
     types: [ opened ]
     branches:
       - demo/*
+      - workflow/dependency-update
 
 jobs:
   reset-demo-from-develop:
