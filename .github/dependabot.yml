@@ -11,6 +11,7 @@ updates:
       day: "monday"
       time: "08:00"
       timezone: "Etc/GMT"
+    target-branch: "workflow/dependency-update"
     # Raise all npm pull requests with custom labels
     labels:
       - "workflow"
