@@ -1,4 +1,5 @@
-name: PR Open To Demos
+name: PR Open To Demos Workflows
+
 on:
   pull_request:
     types: [ opened ]

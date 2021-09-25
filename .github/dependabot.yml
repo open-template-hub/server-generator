@@ -1,6 +1,6 @@
 version: 2
+
 updates:
-  # Keep npm dependencies up to date
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
@@ -9,8 +9,6 @@ updates:
       time: '08:00'
       timezone: 'Etc/GMT'
     target-branch: 'workflow/dependency-update'
-    # Raise all npm pull requests with custom labels
     labels:
       - 'workflow'
     milestone: 1
-
