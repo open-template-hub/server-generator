@@ -3,7 +3,7 @@ name: PR Open Workflows
 on:
   pull_request:
     types: [ opened ]
-    branches-ignore: workflow/dependency-update
+    branches-ignore: 'workflow/dependency-update'
 
 jobs:
   pr-labeler:
