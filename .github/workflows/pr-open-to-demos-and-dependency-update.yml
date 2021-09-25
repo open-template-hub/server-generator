@@ -1,15 +1,13 @@
-name: PR Open To Demos and Dependency Update Workflows
-
+name: PR Open To Demos
 on:
   pull_request:
     types: [ opened ]
     branches:
       - demo/*
-      - workflow/dependency-update
 
 jobs:
   reset-demo-from-develop:
-    name: "Reset Demo From Develop"
+    name: 'Reset Demo From Develop'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
