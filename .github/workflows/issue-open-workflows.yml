@@ -6,7 +6,7 @@ on:
 
 jobs:
   automate-project-columns:
-    name: 'Automate Project Columns'
+    name: "Automate Project Columns"
     runs-on: ubuntu-latest
 
     steps:
@@ -18,7 +18,7 @@ jobs:
           repo-token: ${{ secrets.MASTER_BRANCH_ACCESS_TOKEN }}
 
   milestone-binder:
-    name: 'Milestone Binder'
+    name: "Milestone Binder"
     runs-on: ubuntu-latest
 
     steps:
