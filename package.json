@@ -50,8 +50,9 @@
     "auth",
     "authentication",
     "payment",
-    "basic",
-    "basic info",
+    "busines",
+    "logic",
+    "business logic",
     "backend",
     "template",
     "server template",
@@ -59,8 +60,10 @@
     "auth server template",
     "payment server example",
     "payment server template",
-    "basic info server example",
-    "basic info  server template",
+    "business logic server example",
+    "business logic server template",
+    "mail server example",
+    "mail server template",
     "open template hub"
   ]
 }
