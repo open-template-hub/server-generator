@@ -22,7 +22,7 @@ const QUESTIONS = [
     message:
         '1) Payment Server \n' +
         '  2) Auth Server \n' +
-        '  3) Basic Info Server \n' +
+        '  3) Business Logic Server \n' +
         '  4) File Storage Server \n' +
         '  5) Analytics Server \n' +
         '  6) MİL Server \n' +
@@ -122,9 +122,9 @@ const updateProjectName = (
       repoConfig.projectName = ProjectName.PaymentServer;
       repoConfig.packageName = PackageName.PaymentServer;
       break;
-    case TemplateType.BasicInfoServer:
-      repoConfig.projectName = ProjectName.BasicInfoServer;
-      repoConfig.packageName = PackageName.BasicInfoServer;
+    case TemplateType.BusinessLogicServer:
+      repoConfig.projectName = ProjectName.BusinessLogicServer;
+      repoConfig.packageName = PackageName.BusinessLogicServer;
       break;
     case TemplateType.FileStorageServer:
       repoConfig.projectName = ProjectName.FileStorageServer;
@@ -193,14 +193,14 @@ const cloneTemplate = ( targetPath: string, templateType: string ) => {
           '/' +
           ProjectName.PaymentServer;
       break;
-    case TemplateType.BasicInfoServer:
+    case TemplateType.BusinessLogicServer:
       cmd =
           clone +
           BRANCH_NAME +
           ' ' +
           TEMPLATE_HUB_URL +
           '/' +
-          ProjectName.BasicInfoServer;
+          ProjectName.BusinessLogicServer;
       break;
     case TemplateType.FileStorageServer:
       cmd =
