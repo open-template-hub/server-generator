@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">
-Open Template Hub - Server Generator v2
+Open Template Hub - Server Generator v3
 </h1>
 
 [![GitHubRepo](https://img.shields.io/badge/GitHub-Repository-24292e.svg?style=for-the-badge&logo=github)](https://github.com/open-template-hub/server-generator)
