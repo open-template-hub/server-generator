@@ -1,7 +1,7 @@
 {
   "name": "@open-template-hub/server-generator",
   "description": "CLI server generator of Server Templates on Open Template Hub",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "license": "MIT",
   "preferGlobal": true,
   "main": "dist/index.js",
