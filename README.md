@@ -16,9 +16,8 @@ Open Template Hub - Server Generator v3
 [![LastCommit](https://img.shields.io/github/last-commit/open-template-hub/server-generator?color=43b043&style=for-the-badge)](https://github.com/open-template-hub/server-generator/commits/master)
 [![Release](https://img.shields.io/github/release/open-template-hub/server-generator?include_prereleases&color=43b043&style=for-the-badge)](https://github.com/open-template-hub/server-generator/releases)
 [![SonarCloud](https://img.shields.io/sonar/quality_gate/open-template-hub_server-generator?server=https%3A%2F%2Fsonarcloud.io&label=Sonar%20Cloud&style=for-the-badge&logo=sonarcloud)](https://sonarcloud.io/dashboard?id=open-template-hub_server-generator)
-[![BTC](https://img.shields.io/badge/Donate-BTC-ORANGE?color=F5922F&style=for-the-badge&logo=bitcoin)](https://commerce.coinbase.com/checkout/8313af5f-de48-498d-b2cb-d98819ca7d5e)
 
-Command line interface generator of the servers at [Open Template Hub](https://github.com/open-template-hub)
+Command-line interface generator of the servers at [Open Template Hub](https://github.com/open-template-hub)
 
 Available server types are:
 
