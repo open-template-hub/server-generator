@@ -6,7 +6,7 @@
 
 
 <h1 align="center">
-Open Template Hub - Server Generator v3
+Open Template Hub - Server Generator v4
   <br/>
 (outdated packages)
 </h1>
