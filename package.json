@@ -25,11 +25,11 @@
   },
   "devDependencies": {
     "@types/inquirer": "^8.1.3",
-    "@types/node": "^16.11.11",
+    "@types/node": "^16.11.12",
     "@types/shelljs": "^0.8.9",
     "@types/yargs": "^17.0.4",
     "ts-node": "^10.3.0",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.3"
   },
   "git repository": "https://github.com/open-template-hub/open-template-hub-server-generator",
   "repository": {
