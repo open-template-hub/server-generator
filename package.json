@@ -11,12 +11,12 @@
     "outdated": "node dependency-checker.ts > docs/OUTDATED.md"
   },
   "bin": {
-    "open-template-hub-server-generator": "dist/index.js"
+    "open-template-hub-server-generator": "dist/src/index.js"
   },
   "dependencies": {
     "@types/ncp": "^2.0.5",
     "@types/rimraf": "^3.0.2",
-    "chalk": "^5.0.0",
+    "colors": "^1.4.0",
     "inquirer": "^8.2.0",
     "ncp": "^2.0.0",
     "rimraf": "^3.0.2",
