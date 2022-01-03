@@ -15,7 +15,7 @@ Following packages are not updated in the develop branch yet. So, if you want to
 
 | Package | Current | Wanted | Latest | Location |
 | --- | --- | --- | --- | --- |
-| @types/node | 16.11.17 | 16.11.17 | 17.0.5 | @open-template-hub/server-generator |
+| @types/node | 16.11.17 | 16.11.17 | 17.0.6 | @open-template-hub/server-generator |
 
 <table align="right"><tr><td><a href="https://opentemplatehub.com"><img src="https://raw.githubusercontent.com/open-template-hub/open-template-hub.github.io/master/assets/logo/brand-logo.png" width="50px" alt="oth"/></a></td><td><b>Open Template Hub © 2021</b></td></tr></table>
 
