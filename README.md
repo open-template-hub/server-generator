@@ -21,12 +21,89 @@ Command-line interface generator of the servers at [Open Template Hub](https://g
 
 Available server types are:
 
-* [Payment Server](https://github.com/open-template-hub/payment-server-template)
-* [Business Logic Server](https://github.com/open-template-hub/business-logic-server-template)
-* [Auth Server](https://github.com/open-template-hub/auth-server-template)
-* [File Storage Server](https://github.com/open-template-hub/file-storage-server-template)
-* [Analytics Server](https://github.com/open-template-hub/analytics-server-template)
-* [Mail Server](https://github.com/open-template-hub/mail-server-template)
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/open-template-hub/auth-server-template">
+        <img src="https://raw.githubusercontent.com/open-template-hub/open-template-hub.github.io/master/assets/logo/server/auth-server-logo.png" width="100px;" alt=""/>
+        <br />
+        <sub>
+          <b>
+            Auth Server
+          </b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/open-template-hub/payment-server-template">
+        <img src="https://raw.githubusercontent.com/open-template-hub/open-template-hub.github.io/master/assets/logo/server/payment-server-logo.png" width="100px;" alt=""/>
+        <br />
+        <sub>
+          <b>
+            Payment Server
+          </b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/open-template-hub/file-storage-server-template">
+        <img src="https://raw.githubusercontent.com/open-template-hub/open-template-hub.github.io/master/assets/logo/server/file-storage-server-logo.png" width="100px;" alt=""/>
+        <br />
+        <sub>
+          <b>
+            File Storage Server
+          </b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/open-template-hub/business-logic-server-template">
+        <img src="https://raw.githubusercontent.com/open-template-hub/open-template-hub.github.io/master/assets/logo/server/business-logic-server-logo.png" width="100px;" alt=""/>
+        <br />
+        <sub>
+          <b>
+            Business Logic Server
+          </b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/open-template-hub/analytics-server-template">
+        <img src="https://raw.githubusercontent.com/open-template-hub/open-template-hub.github.io/master/assets/logo/server/analytics-server-logo.png" width="100px;" alt=""/>
+        <br />
+        <sub>
+          <b>
+            Analytics Server
+          </b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/open-template-hub/mail-server-template">
+        <img src="https://raw.githubusercontent.com/open-template-hub/open-template-hub.github.io/master/assets/logo/server/mail-server-logo.png" width="100px;" alt=""/>
+        <br />
+        <sub>
+          <b>
+            Mail Server
+          </b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/open-template-hub/sms-server-template">
+        <img src="https://raw.githubusercontent.com/open-template-hub/open-template-hub.github.io/master/assets/logo/server/sms-server-logo.png" width="100px;" alt=""/>
+        <br />
+        <sub>
+          <b>
+            SMS Server
+          </b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## About the NPM Package
 
