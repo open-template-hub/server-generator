@@ -3,6 +3,5 @@ dist/
 .npmrc
 package-lock.json
 .idea/*
-yarn.lock
 icon.png
 out/
