@@ -1,7 +1,7 @@
 {
   "name": "@open-template-hub/server-generator",
   "description": "Command-line interface generator of the servers at Open Template Hub",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "license": "MIT",
   "preferGlobal": true,
   "main": "dist/index.js",
