@@ -5,7 +5,7 @@
     <scripts>
       <script value="start" />
     </scripts>
-    <node-interpreter value="node" />
+    <node-interpreter value="/usr/local/bin/node" />
     <package-manager value="npm" />
     <envs />
     <method v="2" />
