@@ -32,7 +32,7 @@ const QUESTIONS = [
       '  Please enter a server type you want to generate: ',
     when: () => yargs().argv,
     validate: (input: string) => {
-      if (/^[1 | 2 | 3 | 4 | 5 | 6 | 7]$/.test(input)) return true;
+      if (/^[1-7]$/.test(input)) return true;
       else
         return 'Please enter correct server type. Server type can be 1, 2, 3, 4, 5, 6 and 7.';
     },
