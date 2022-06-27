@@ -306,7 +306,7 @@ const postProcessNode = (targetPath: string) => {
       return false;
     }
   } else {
-    var message = colors.red('No yarn or npm found. Cannot run installation.');
+    const message = colors.red('No yarn or npm found. Cannot run installation.');
     console.log(message);
   }
 
