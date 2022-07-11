@@ -15,7 +15,7 @@ Following packages are not updated in the develop branch yet. So, if you want to
 
 | Package | Current | Wanted | Latest | Location |
 | --- | --- | --- | --- | --- |
-| @types/node | 17.0.45 | 17.0.45 | 18.0.1 | node_modules/@types/node |
+| @types/node | 17.0.45 | 17.0.45 | 18.0.3 | node_modules/@types/node |
 | inquirer | 8.2.4 | 8.2.4 | 9.0.0 | node_modules/inquirer |
 
 <table align="right"><tr><td><a href="https://opentemplatehub.com"><img src="https://raw.githubusercontent.com/open-template-hub/open-template-hub.github.io/master/assets/logo/brand-logo.png" width="50px" alt="oth"/></a></td><td><b>Open Template Hub © 2021</b></td></tr></table>
