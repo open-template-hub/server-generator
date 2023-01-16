@@ -17,6 +17,7 @@ Following packages are not updated in the develop branch yet. So, if you want to
 | --- | --- | --- | --- | --- |
 | @types/inquirer | 8.2.5 | 8.2.5 | 9.0.3 | node_modules/@types/inquirer |
 | inquirer | 8.2.5 | 8.2.5 | 9.1.4 | node_modules/inquirer |
+| rimraf | 3.0.2 | 3.0.2 | 4.0.7 | node_modules/rimraf |
 
 <table align="right"><tr><td><a href="https://opentemplatehub.com"><img src="https://raw.githubusercontent.com/open-template-hub/open-template-hub.github.io/master/assets/logo/brand-logo.png" width="50px" alt="oth"/></a></td><td><b>Open Template Hub © 2023</b></td></tr></table>
 
