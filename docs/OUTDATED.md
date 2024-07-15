@@ -18,8 +18,8 @@ Following packages are not updated in the develop branch yet. So, if you want to
 | @types/inquirer | 8.2.10 | 8.2.10 | 9.0.7 | node_modules/@types/inquirer |
 | @types/node | 18.19.39 | 18.19.39 | 20.14.10 | node_modules/@types/node |
 | @types/rimraf | 3.0.2 | 3.0.2 | 4.0.5 | node_modules/@types/rimraf |
-| inquirer | 8.2.6 | 8.2.6 | 10.0.0 | node_modules/inquirer |
-| rimraf | 3.0.2 | 3.0.2 | 5.0.8 | node_modules/rimraf |
+| inquirer | 8.2.6 | 8.2.6 | 10.0.1 | node_modules/inquirer |
+| rimraf | 3.0.2 | 3.0.2 | 6.0.1 | node_modules/rimraf |
 | typescript | 4.9.5 | 4.9.5 | 5.5.3 | node_modules/typescript |
 
 <table align="right"><tr><td><a href="https://opentemplatehub.com"><img src="https://raw.githubusercontent.com/open-template-hub/open-template-hub.github.io/master/assets/logo/brand-logo.png" width="50px" alt="oth"/></a></td><td><b>Open Template Hub © 2023</b></td></tr></table>
