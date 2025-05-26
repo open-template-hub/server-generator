@@ -16,9 +16,9 @@ Following packages are not updated in the develop branch yet. So, if you want to
 | Package | Current | Wanted | Latest | Location |
 | --- | --- | --- | --- | --- |
 | @types/inquirer | 8.2.11 | 8.2.11 | 9.0.8 | node_modules/@types/inquirer |
-| @types/node | 18.19.101 | 18.19.101 | 22.15.19 | node_modules/@types/node |
+| @types/node | 18.19.103 | 18.19.103 | 22.15.21 | node_modules/@types/node |
 | @types/rimraf | 3.0.2 | 3.0.2 | 4.0.5 | node_modules/@types/rimraf |
-| inquirer | 8.2.6 | 8.2.6 | 12.6.1 | node_modules/inquirer |
+| inquirer | 8.2.6 | 8.2.6 | 12.6.3 | node_modules/inquirer |
 | rimraf | 3.0.2 | 3.0.2 | 6.0.1 | node_modules/rimraf |
 | shelljs | 0.8.5 | 0.8.5 | 0.10.0 | node_modules/shelljs |
 | typescript | 4.9.5 | 4.9.5 | 5.8.3 | node_modules/typescript |
